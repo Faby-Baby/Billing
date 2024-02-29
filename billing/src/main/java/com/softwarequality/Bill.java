@@ -1,14 +1,18 @@
+package com.softwarequality;
+import java.util.Date;
+
 public class Bill {
     private int ID;
     private String UtilityType;
-    private date BillingDate;
-    private date BillingStart;
-    private date BillingEnd;
+    private Date PayBy;
+    private Date BillingDate;
+    private Date BillingStart;
+    private Date BillingEnd;
     private double paymentTotal;
     private double usuageAmt;
     private String usuageMeasurement;
     private boolean paid;
-    private int amountPaid;
+    private double amountPaid;
 
     // Getters
     public int getID() {
@@ -16,31 +20,35 @@ public class Bill {
     }
 
     public String getUtilityType() {
-        return utilityType;
+        return UtilityType;
+    }
+
+    public Date getPayBy() {
+        return PayBy;
     }
 
     public Date getBillingDate() {
-        return billingDate;
+        return BillingDate;
     }
 
     public Date getBillingStart() {
-        return billingStart;
+        return BillingStart;
     }
 
     public Date getBillingEnd() {
-        return billingEnd;
+        return BillingEnd;
     }
 
     public double getPaymentTotal() {
         return paymentTotal;
     }
 
-    public double getUsageAmt() {
-        return usageAmt;
+    public double getUsuageAmt() {
+        return usuageAmt;
     }
 
-    public String getUsageMeasurement() {
-        return usageMeasurement;
+    public String getUsuageMeasurement() {
+        return usuageMeasurement;
     }
 
     public boolean isPaid() {
@@ -56,32 +64,36 @@ public class Bill {
         this.ID = ID;
     }
 
-    public void setUtilityType(String utilityType) {
-        this.utilityType = utilityType;
+    public void setUtilityType(String UtilityType) {
+        this.UtilityType = UtilityType;
     }
 
-    public void setBillingDate(Date billingDate) {
-        this.billingDate = billingDate;
+    public void setPayBy(Date PayBy) {
+        this.PayBy = PayBy;
     }
 
-    public void setBillingStart(Date billingStart) {
-        this.billingStart = billingStart;
+    public void setBillingDate(Date BillingDate) {
+        this.BillingDate = BillingDate;
     }
 
-    public void setBillingEnd(Date billingEnd) {
-        this.billingEnd = billingEnd;
+    public void setBillingStart(Date BillingStart) {
+        this.BillingStart = BillingStart;
+    }
+
+    public void setBillingEnd(Date BillingEnd) {
+        this.BillingEnd = BillingEnd;
     }
 
     public void setPaymentTotal(double paymentTotal) {
         this.paymentTotal = paymentTotal;
     }
 
-    public void setUsageAmt(double usageAmt) {
-        this.usageAmt = usageAmt;
+    public void setUsuageAmt(double usuageAmt) {
+        this.usuageAmt = usuageAmt;
     }
 
-    public void setUsageMeasurement(String usageMeasurement) {
-        this.usageMeasurement = usageMeasurement;
+    public void setUsuageMeasurement(String usuageMeasurement) {
+        this.usuageMeasurement = usuageMeasurement;
     }
 
     public void setPaid(boolean paid) {
@@ -91,6 +103,7 @@ public class Bill {
     public void setAmountPaid(int amountPaid) {
         this.amountPaid = amountPaid;
     }
+
 }
 
 
