@@ -2,6 +2,7 @@ package com.softwarequality;
 import java.util.Date;
 
 public class Bill {
+    private int Customer_ID;
     private int ID;
     private String UtilityType;
     private Date PayBy;
@@ -17,6 +18,10 @@ public class Bill {
     // Getters
     public int getID() {
         return ID;
+    }
+
+    public int getCustomer_ID(){
+        return Customer_ID;
     }
 
     public String getUtilityType() {
@@ -55,7 +60,7 @@ public class Bill {
         return paid;
     }
 
-    public int getAmountPaid() {
+    public double getAmountPaid() {
         return amountPaid;
     }
 
@@ -63,6 +68,11 @@ public class Bill {
     public void setID(int ID) {
         this.ID = ID;
     }
+
+    public int setCustomer_ID(int Customer_ID){
+        return this.Customer_ID = Customer_ID;
+    }
+
 
     public void setUtilityType(String UtilityType) {
         this.UtilityType = UtilityType;
