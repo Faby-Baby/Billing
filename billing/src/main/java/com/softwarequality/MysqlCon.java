@@ -11,9 +11,7 @@ public class MysqlCon {
             Class.forName("com.mysql.jdbc.Driver");
             Connection con = DriverManager.getConnection("jdbc:mysql://164.92.87.80:3306/software_quality", "softwarequality", "SoftwareQuality_375");
             Statement stmt = con.createStatement();
-
             ResultSet rs = stmt.executeQuery(null);
-
         } catch (Exception e) {
             // TODO: handle exception
         }
